@@ -1,3 +1,31 @@
+
+#!/usr/bin/env python
+from resource_management import *
+from resource_management.libraries.script.script import Script
+import sys, os, glob, socket
+from resource_management.libraries.functions.default import default
+
+
+
+# server configurations
+config = Script.get_config()
+
+#location of prebuilt package from 9/3
+#snapshot_package='https://www.dropbox.com/s/la1c25xq9zd8w5g/nifi-0.3.0-SNAPSHOT-bin.zip'
+
+#official 0.3
+#snapshot_package='http://apache.arvixe.com/nifi/0.3.0/nifi-0.3.0-bin.zip'
+
+#official HDF 1.0 package (same as apache 0.3.0)
+#snapshot_package='http://public-repo-1.hortonworks.com/HDF/1.0.0.0/nifi-1.0.0.0-7-bin.zip'
+
+#official HDF 1.1.1 package (nifi 0.4.1)
+#snapshot_package='http://public-repo-1.hortonworks.com/HDF/1.1.1.0/nifi-1.1.1.0-12-bin.zip'
+
+#official HDF 1.1.2 package
+#snapshot_package='http://public-repo-1.hortonworks.com/HDF/1.1.2.0/nifi-0.5.1.1.1.2.0-32-bin.zip'
+
+#official HDF 1.2 package (nifi 0.6.0)
 #snapshot_package='http://public-repo-1.hortonworks.com/HDF/centos6/1.x/updates/1.2.0.0/HDF-1.2.0.0-91.zip'
 
 # HDF 1.2.0.1
